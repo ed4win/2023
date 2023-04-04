@@ -40,12 +40,12 @@ jobs:
       - name: GET UP
         run: |
           source venv/bin/activate
-          python get_up.py ${{ secrets.G_T }} ${{ github.repository }} --weather_message ": ${{ github.event.inputs.message }}" --bing_cookie ${{ secrets.BING_COOKIE }}
+          python get_up.py ${{ secrets.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 }} ${{ github.repository }} --weather_message ": ${{ github.event.inputs.message }}" --bing_cookie ${{ secrets.BING_COOKIE }}
 
       - name: Push New Pic
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "qingliangx@126.com"
+          git config --local user.name "ed4win"
           git add .
           git commit -m "generated today pic" || echo "no need to commit "
           git push || echo "no file change"
