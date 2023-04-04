@@ -40,7 +40,7 @@ jobs:
       - name: GET UP
         run: |
           source venv/bin/activate
-          python get_up.py ${{ secrets.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 }} ${{ github.repository }} --weather_message ": ${{ github.event.inputs.message }}" --bing_cookie ${{ secrets.BING_COOKIE }}
+          python get_up.py ${{ secrets.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 }} ${{ github.2023 }} --weather_message ": ${{ github.event.inputs.message }}" --bing_cookie ${{ secrets.BING_COOKIE }}
 
       - name: Push New Pic
         run: |
