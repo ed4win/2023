@@ -8,7 +8,7 @@ on:
         required: false
 
 env:
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_API_KEY: ${{ secrets.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 }}
 
 jobs:
   sync:
