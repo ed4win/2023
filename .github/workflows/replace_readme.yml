@@ -12,7 +12,7 @@ on:
 env:
   GITHUB_NAME: ed4win
   GITHUB_EMAIL: qingliangx@126.com
-  BOOKMARK_ISSUE_ID: 4
+  BOOKMARK_ISSUE_ID: 1
 
 
 jobs:
