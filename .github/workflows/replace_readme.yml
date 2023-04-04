@@ -10,8 +10,8 @@ on:
     types: [created]
 
 env:
-  GITHUB_NAME: yihong0618
-  GITHUB_EMAIL: zouzou0208@gmail.com
+  GITHUB_NAME: ed4win
+  GITHUB_EMAIL: qingliangx@126.com
   BOOKMARK_ISSUE_ID: 4
 
 
@@ -44,12 +44,12 @@ jobs:
       - name: Replace README
         run: |
           source venv/bin/activate
-          python main.py ${{ secrets.G_T }} ${{ github.repository }} --issue_numbe '${{ github.event.issue.number }}' --issue_label_name '${{ github.event.issue.labels[0].name }}' 
+          python main.py ${{ secrets.githup2023 }} ${{ github.repository }} --issue_numbe '${{ github.event.issue.number }}' --issue_label_name '${{ github.event.issue.labels[0].name }}' 
         if: github.event.issue.number != ${{ env.BOOKMARK_ISSUE_ID }}
       - name: Make bookmark
         run: |
           source venv/bin/activate
-          python make_bookmark.py ${{ secrets.G_T }} ${{ github.repository }}
+          python make_bookmark.py ${{ secrets.githup2023 }} ${{ github.repository }}
         if:  github.event.issue.number == ${{ env.BOOKMARK_ISSUE_ID }}
       - name: Push README
         run: |
